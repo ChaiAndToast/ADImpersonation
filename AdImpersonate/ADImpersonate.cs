@@ -15,7 +15,6 @@ namespace AdImpersonate
     /// Updates Current Thread to run as the specified user
     /// </summary>
 
-    //if we see other DataProviders need AD access to servers, move this class to Platform
     public class ADImpersonate : IDisposable
     {
         [DllImport("advapi32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
